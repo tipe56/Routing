@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Terms View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TermsViewController" id="Y6W-OH-hqX" customClass="TermsViewController" customModule="Routing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9Ug-Ar-hqT">
+                                <rect key="frame" x="30" y="109" width="333" height="460"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">navigationBar=&lt;UINavigationBar: 0x140d09440; frame = (0 59; 0 50); opaque = NO; autoresize = W; layer = &lt;CALayer: 0x60000391fec0&gt;&gt; delegate=0x141039a00
+2023-04-05 20:04:02.030512+0200 Routing[68384:7597757] [UILog] Called -[UIContextMenuInteraction updateVisibleMenuWithBlock:] while no context menu is visible. This won't do anything.
+navigationBar=&lt;UINavigationBar: 0x140d09440; frame = (0 59; 0 50); opaque = NO; autoresize = W; layer = &lt;CALayer: 0x60000391fec0&gt;&gt; delegate=0x141039a00
+2023-04-05 20:04:02.030512+0200 Routing[68384:7597757] [UILog] Called -[UIContextMenuInteraction updateVisibleMenuWithBlock:] while no context menu is visible. This won't do anything.
+navigationBar=&lt;UINavigationBar: 0x140d09440; frame = (0 59; 0 50); opaque = NO; autoresize = W; layer = &lt;CALayer: 0x60000391fec0&gt;&gt; delegate=0x141039a00
+2023-04-05 20:04:02.030512+0200 Routing[68384:7597757] [UILog] Called -[UIContextMenuInteraction updateVisibleMenuWithBlock:] while no context menu is visible. This won't do anything.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBq-UQ-9xE">
+                                <rect key="frame" x="123" y="601" width="147" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="I read and agree"/>
+                                <connections>
+                                    <action selector="didTapedAgreeButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IwI-b9-N2z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ug-Ar-hqT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="4GM-Sj-YTG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9Ug-Ar-hqT" secondAttribute="bottom" constant="249" id="H69-C7-9P5"/>
+                            <constraint firstItem="9Ug-Ar-hqT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="cCD-Mc-k7v"/>
+                            <constraint firstItem="wBq-UQ-9xE" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="jGc-zk-qh1"/>
+                            <constraint firstItem="wBq-UQ-9xE" firstAttribute="top" secondItem="9Ug-Ar-hqT" secondAttribute="bottom" constant="32" id="jyd-qd-Npf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9Ug-Ar-hqT" secondAttribute="trailing" constant="30" id="zyl-pO-dKU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84.732824427480907" y="12.67605633802817"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

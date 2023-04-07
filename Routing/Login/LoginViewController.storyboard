@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Routing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LOGIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vs3-U2-6uz">
+                                <rect key="frame" x="30" y="109" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZQX-2l-AyD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Wa-9b-isq">
+                                <rect key="frame" x="30" y="189" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IQO-FP-ol5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDm-Ue-Wv7">
+                                <rect key="frame" x="50" y="289" width="293" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="njA-d2-WV5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTappedLoginButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jv4-tt-Cca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Wa-9b-isq" firstAttribute="top" secondItem="vs3-U2-6uz" secondAttribute="bottom" constant="30" id="31i-N2-w5v"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NDm-Ue-Wv7" secondAttribute="trailing" constant="50" id="K3I-lH-pB6"/>
+                            <constraint firstItem="5Wa-9b-isq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Kx1-AJ-4bl"/>
+                            <constraint firstItem="NDm-Ue-Wv7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="QlT-se-8rb"/>
+                            <constraint firstItem="NDm-Ue-Wv7" firstAttribute="top" secondItem="5Wa-9b-isq" secondAttribute="bottom" constant="50" id="a9V-7F-5zD"/>
+                            <constraint firstItem="vs3-U2-6uz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="cBx-eE-nd7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5Wa-9b-isq" secondAttribute="trailing" constant="30" id="qVr-Xx-chI"/>
+                            <constraint firstItem="vs3-U2-6uz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="uXE-a2-5E7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vs3-U2-6uz" secondAttribute="trailing" constant="30" id="yJh-6S-OFe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="NDm-Ue-Wv7" id="2XR-V0-F5g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
